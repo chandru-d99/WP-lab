@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Grid Layout</title>
+
+<style>
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.box {
+    background-color: lightblue;
+    border: 2px solid blue;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<h2>CSS Grid Layout</h2>
+
+<div class="grid-container">
+<div class="box">Web Programming</div>
+<div class="box">Software Engineering</div>
+<div class="box">Data Analytics</div>
+<div class="box">Cryptography and Network Security</div>
+<div class="box">Quantitative Techniques</div>
+<div class="box">Soft Skills</div>
+</div>
+
+</body>
+</html>
